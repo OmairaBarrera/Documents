@@ -4,24 +4,84 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Listas</title>
+        <title>Tabla</title>
     </head>
     <body>
-        <ul>
-            <li>HTML</li>
-            <li>css</li>
-            <li>JavaScript</li>
-        </ul>
-        <ol>
-            <li>HTML</li>
-            <li>css</li>
-            <li>JavaScript</li>
-        </ol>
-        <dl>
-            <dt>HTML</dt>
-            <dd>Lenguaje de marcado</dd>
-            <dt>CSS</dt>
-            <dd>Lenguaje de estilos</dd>
-        </dl>
+        <!--Tabla basica-->
+        <table>
+            <caption>Empleados</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Trabajo</th>
+            </tr>
+            <tr>
+                <td>Vicky</td>
+                <td>Cocinera</td>
+            </tr>
+        </table>
+        <!--Tabla que toma dos espacios a lo ancho-->
+        <table>
+            <caption>Empleados</caption>
+            <tr>
+                <th colspan="2">Nombre</th>
+                <th colspan="2">Trabajo</th>
+            </tr>
+            <tr>
+                <td>Vicky</td>
+                <td>Leon</td>
+                <td>Cocinera</td>
+                <td>master</td>
+            </tr>
+        </table>
+        <!--Tabla que combina dos celdas a lo alto y estructura de una tabla-->
+        <table>
+            <caption>Empleados</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Nombre</th>
+                    <th colspan="2">Trabajo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vicky</td>
+                    <td>Leon</td>
+                    <td>Cocinera</td>
+                    <td rowspan="2">master</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Apolo</td>
+                    <td>Cocinera</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Tabla agrupación de columnas-->
+        <table>
+            <caption>Empleados</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Nombre</th>
+                    <th colspan="2">Trabajo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vicky</td>
+                    <td>Leon</td>
+                    <td>Cocinera</td>
+                    <td rowspan="2">master</td>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>Apolo</td>
+                    <td>Cocinera</td>
+                </tr>
+            </tbody>
+            <colgroup>
+                <col span="2" style="background:red">
+                <col span="3" style="background:yellow">
+            </colgroup>
+        </table>
     </body>
 </html>
