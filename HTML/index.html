@@ -4,84 +4,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tabla</title>
+        <title>Formato de Texto</title>
     </head>
     <body>
-        <!--Tabla basica-->
-        <table>
-            <caption>Empleados</caption>
-            <tr>
-                <th>Nombre</th>
-                <th>Trabajo</th>
-            </tr>
-            <tr>
-                <td>Vicky</td>
-                <td>Cocinera</td>
-            </tr>
-        </table>
-        <!--Tabla que toma dos espacios a lo ancho-->
-        <table>
-            <caption>Empleados</caption>
-            <tr>
-                <th colspan="2">Nombre</th>
-                <th colspan="2">Trabajo</th>
-            </tr>
-            <tr>
-                <td>Vicky</td>
-                <td>Leon</td>
-                <td>Cocinera</td>
-                <td>master</td>
-            </tr>
-        </table>
-        <!--Tabla que combina dos celdas a lo alto y estructura de una tabla-->
-        <table>
-            <caption>Empleados</caption>
-            <thead>
-                <tr>
-                    <th colspan="2">Nombre</th>
-                    <th colspan="2">Trabajo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vicky</td>
-                    <td>Leon</td>
-                    <td>Cocinera</td>
-                    <td rowspan="2">master</td>
-                </tr>
-                <tr>
-                    <td>Juan</td>
-                    <td>Apolo</td>
-                    <td>Cocinera</td>
-                </tr>
-            </tbody>
-        </table>
-        <!--Tabla agrupación de columnas-->
-        <table>
-            <caption>Empleados</caption>
-            <thead>
-                <tr>
-                    <th colspan="2">Nombre</th>
-                    <th colspan="2">Trabajo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vicky</td>
-                    <td>Leon</td>
-                    <td>Cocinera</td>
-                    <td rowspan="2">master</td>
-                </tr>
-                <tr>
-                    <td>Juan</td>
-                    <td>Apolo</td>
-                    <td>Cocinera</td>
-                </tr>
-            </tbody>
-            <colgroup>
-                <col span="2" style="background:red">
-                <col span="3" style="background:yellow">
-            </colgroup>
-        </table>
+        <!--Texto en negrilla-->
+        <p><b>Este texto esta en negrilla</b></p>
+        <!--Texto fuerte-->
+        <p><strong>Este texto es fuerte</strong></p>
+        <!--Texto en cursiva-->
+        <p><i>Este texto esta en cursiva</i></p>
+        <!--Texto enfatizado-->
+        <p><em>Este texto es enfatizado</em></p>
+        <!--Texto en subindice-->
+        <p>Este texto es un <sub>subindice</sub></p>
+        <!--Texto en superindice-->
+        <p>Este texto es un <sup>subindice</sup></p>
+        <!--Texto resaltado-->
+        <p>Texto <mark>resaltado</mark></p>
+        <!--Texto subrayado-->
+        <p>Texto <u>subrayado</u></p>
+        <!--Texto eliminado o tachado-->
+        <p>Texto <del>eliminado</del></p>
+        <p>Texto <strike>eliminado</strike></p>
+        <p>Texto <s>eliminado</s></p>
+        <!--Texto insertado-->
+        <p>Texto <ins>insertado</ins></p>
+        <!--Texto pequeño-->
+        <p>Anotaciones menores <small>pequeñas puntualizaciones</small></p>
+        <!--Texto grande-->
+        <p>Anotaciones menores <big>pequeñas puntualizaciones</big></p>
+        <!--Texto de Cita o frase extraída de otro contexto.-->
+        <p><q cite="https://desarrolloweb.com/home/html">HTML es el primer lenguaje que debe aprender cualquier persona interesada en construir un sitio web</q></p>
+        <!--Texto que indica definiciones y abreviaturas-->
+        <p>El término <dfn><abbr title="Kilómetro">Km</abrr></dfn> es una unidad de longitud.</p>
+        <!--Texto salto de linea-->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptatibus quam debitis reiciendis! <br>Possimus laboriosam dignissimos perspiciatis explicabo ab beatae aspernatur asperiores. Temporibus quidem laboriosam quas veritatis nihil fuga autem?</p>
+        <!--Texto dinamico-->
+        <p>Texto <span>dinamico</span></p>
     </body>
 </html>
